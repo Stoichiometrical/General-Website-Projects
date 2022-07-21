@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="../css/faq.css">
+</head>
+<body id="faq-body">
+
+
+<!--Navigation Bar-->
+<nav class="navbar">
+    <a href="../index.html"><img src="../img/logo.png" alt="Logo" width="80" height="40" class="logo"/></a>
+    <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="faq.html">FAQs</a>
+    </div>
+</nav>
+
+<!--Main Body-->
+<div class="main-body">
+    <div class="main-text">FREQUENTLY ASKED QUESTIONS</div>
+    <div class="button">
+        <button class="start-btn">START QUIZ</button>
+    </div>
+<!--Box where questions will appear-->
+    <div class="quiz-box">
+        <div class="qn1">
+            <!--                    Radio button-->
+            <span class="question">1.What is the most visited tourist site in Zimbabwe?</span><br>
+            <input type="checkbox" value="Kariba" name="q1" id="Kariba" class="check"/>
+            <label for="Kariba">Kariba</label><br>
+            <input type="checkbox" value="Victoria Falls" name="op2" id="VictoriaFalls" class="check"/>
+            <label for="VictoriaFalls">Victoria Falls</label><br>
+            <input type="checkbox" value="Chinhoyi Caves" name="op3" id="ChinhoyiCaves" class="check"/>
+            <label for="ChinhoyiCaves">Chinhoyi Caves</label><br>
+            <input type="checkbox" value="Great Zimbabwe" name="op4" id="GreatZimbabwe" class="check"/>
+            <label for="GreatZimbabwe">Great Zimbabwe</label><br>
+
+        </div>
+
+        <div class="qn2">
+            <!--                            radio-->
+            <span class="question">2.How much does it cost to hire a concierge</span><br>
+            <input type="radio" value="Rs1000" name="q1"  class="radio" id="Rs1000"/>
+            <label for="Rs1000">Rs1000</label><br>
+
+            <input type="radio" value="Its for free as long as you tip them" name="q1" class="radio" id="sec"/>
+            <label for="sec">Its for free as long as you tip them</label><br>
+
+            <input type="radio" value="Its negotiable,no fixed price" name="q1" class="radio" id="sec3"/>
+            <label for="sec3">Its negotiable,no fixed price</label><br>
+
+            <input type="radio" value="All of the above" name="q1"  class="radio" id="sec4"/>
+            <label for="sec4">All of the above</label><br>
+
+        </div>
+
+        <div class="qn3">
+            <!--slider-->
+            <span class="question">3.How long does it take to get a concierge.On a scale of 10 to 100hours?</span><br>
+            <div class="slidecontainer">
+                <input type="range" min="10" max="100" value="50" class="slider" id="myRange">
+            </div>
+        </div>
+
+        <div class="qn4">
+            <!--                    input answer-->
+            <span class="question">4.Which booking system does The Steward use?</span><br>
+            <label for="text-input">Enter Value Here</label><input type="text" id="text-input"/>
+        </div>
+
+        <div class="qn5">
+            <!--                    Drop Down-->
+            <span class="question">5.I am l guranteed to get the best seats or reservations if l use your concierge services?</span><br>
+            <label for="cars">Choose One Correct Answer:</label>
+
+            <select name="cars" id="cars">
+                <option value="Yes,you get any seat you want">Yes,you get any seat you want</option>
+                <option value="No,we can only book what we can">No,we can only book what we can</option>
+                <option value="You get the premium available seat">You get the premium available seat</option>
+                <option value="We cant guarantee that">We cant gurantee that</option>
+            </select>
+        </div>
+
+        <div class="next">
+            <input type="submit" value="Check" class="button-style" id="next"/>
+            <button type="button" class="button-style" id="next-button">Next</button>
+            <button type="button" class="button-style" id="exit" style="display: none">Exit</button>
+
+        </div>
+    </div>
+</div>
+
+<!-- Question section -->
+<div class="question-section" >
+    <h2>Still more questions?Click Here....</h2>
+</div>
+
+<!--Question Request Form-->
+<div class="more-que ">
+    <form action="../inquiries.php" class="que-form" method="post">
+        <label for="fname">Fullname</label><br>
+        <input type="text" placeholder="John Doe" name="fname" required id="fname" maxlength="20"/><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" placeholder="peter@gmail.com" name="email"  required id="email"/>
+        <h3>GENDER</h3>
+        <input type="radio" name="gender" id="male" value="Male"/>
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" value="Female"/>
+        <label for="female">Female</label>
+
+        <label for=que-area>Questions</label>
+        <textarea placeholder="What are your questions?" name="questions" id="que-area" required></textarea><br>
+
+        <input type="submit" value="Submit" name="submit" id="submit" class="button-style"/>&nbsp;&nbsp;<input type="reset" value="Reset" name="submit" class="button-style"/>
+    </form>
+
+</div>
+
+
+
+<!--Footer-->
+<div class="footer-container">
+
+    <div class="footer">
+        <div class="">
+            <span class="footer-head">Company</span><br>
+
+            <ul>
+                <li>23 Park Lane</li>
+                <li>Harare</li>
+                <li>Zimbabwe</li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div class="">
+            <span class="footer-head">Services</span><br>
+
+            <ul>
+                <li>Travel Concierge</li>
+                <li>Entertainment Conceirge</li>
+                <li>Health & Fitness Concierge</li>
+                <li>Home & Personal Concierge</li>
+            </ul>
+        </div>
+
+        <div class="">
+            <span class="footer-head">Connect With Us</span><br>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/david-gondo/"><img src="../img/l1.png" alt="Photo Missing" class="social"></a>
+                <a href="https://www.facebook.com/davidtendai.infinity.5"><img src="../img/l2.png" alt="Photo Missing" class="social"></a>
+                <a href="https://www.instagram.com/theartphilosopher/"><img src="../img/l3.png" alt="Photo Missing" class="social"></a>
+                <a href="https://wa.me/+23058417209"><img src="../img/l4.png" alt="Photo Missing" class="social"></a>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer-img">
+        <img src="../img/pty.png" alt="photo missing" width="800" height="200"/>
+    </div>
+
+
+</div>
+
+<script src="../script.js" async></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <script src="../script.js" async></script>
+</head>
+<body id="contact-body">
+
+        <!--Navigation Bar-->
+        <nav class="navbar">
+            <a href="../index.html"><img src="../img/logo.png" alt="Logo" width="80" height="40" class="logo"/></a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="faq.html">FAQs</a>
+            </div>
+
+        </nav>
+
+        <!--Main Body-->
+        <div class="main-body">
+            <div class="main-text">CONTACT US</div>
+            <div class="motto">
+                At The STEWARD we pride in our fast,reliable and best concierge services by providing<br>
+                our customers with the best offers and packages wherever they are in the country.<br>
+            Write to us about your experiences with us or  any inquiries you have about our services.
+            </div>
+
+         <span class="here ">HERE IS HOW</span>
+
+            <div class="social-container">
+
+                <div class="action-text">SOCIAL MEDIA</div>
+                <div class="action-text">JOIN OUR COMMUNITY</div>
+<!--                Social media icons.There have been put here to match grid specifications so that that they appear on second row.Without having to write more grid-item css-->
+                  <div class="icons">
+                      <a href="https://www.linkedin.com/in/david-gondo/"><img src="../img/l1.png" alt="Photo Missing" class="social"></a>
+                      <a href="https://www.facebook.com/davidtendai.infinity.5"><img src="../img/l2.png" alt="Photo Missing" class="social"></a>
+                      <a href="https://www.instagram.com/theartphilosopher/"><img src="../img/l3.png" alt="Photo Missing" class="social"></a>
+                      <a href="https://wa.me/+23058417209"><img src="../img/l4.png" alt="Photo Missing" class="social"></a>
+                  </div>
+                  <div class="pop" onclick="showPopup()">
+                    Join Our Mailing List
+                </div>
+            </div>
+
+<!--            popup-->
+            <div class="more">
+                <form action="../action.php"  method="post">
+                    CONNECT WITH US
+                    <p>Join our mailing list</p>
+                    <label for="fname">Fullname</label><br>
+                    <input type="text" placeholder="John Doe" name="fname"  id="fname" required maxlength="20"/><br><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="email" placeholder="peter@gmail.com" name="email" required id="email"/>
+                    <p>GENDER</p>
+
+                    <input type="radio" name="gender" id="male" value="Male"/>
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="gender" id="female" value="Female"/>
+                    <label for="female">Female</label><br>
+
+                    <label for="age">Select Your Your Age Range</label>
+                    <select name="age-range" id="age">
+                        <option value="18-30">18-30</option>
+                        <option value="31-50">31-50</option>
+                        <option value="Above 50">Above 50</option>
+                    </select><br>
+
+                    <input type="submit" value="Submit" name="submit" id="submit"/>&nbsp;&nbsp;<input type="reset" value="Reset" name="submit" />
+
+                </form>
+            </div>
+
+            <div class="action-text" style="text-align: center;margin-top: 3%;color:deepskyblue">ABOUT ME</div>
+
+<!--            Information about me-->
+            <div class="bio-container">
+
+                <div class="picture">
+                    <img src="../img/pic.jpg" alt="Photo Missing"/>
+                </div>
+
+                <div class="bio-text">
+                    My name is  David  Gondo.I am a Software Developer and Artificial Inteligence enthusiast.
+                    Welcome  to The Steward Concierge FAQs.
+                    I hope you found al the answers to your questions on our services.
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+<!--Footer-->
+<div class="footer-container">
+
+    <div class="footer">
+        <div class="">
+            <span class="footer-head">Company</span><br>
+
+            <ul>
+                <li>23 Park Lane</li>
+                <li>Harare</li>
+                <li>Zimbabwe</li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div class="">
+            <span class="footer-head">Services</span><br>
+
+            <ul>
+                <li>Travel Concierge</li>
+                <li>Entertainment Conceirge</li>
+                <li>Health & Fitness Concierge</li>
+                <li>Home & Personal Concierge</li>
+            </ul>
+        </div>
+
+        <div class="">
+            <span class="footer-head">Connect With Us</span><br>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/david-gondo/"><img src="../img/l1.png" alt="Photo Missing" class="social"></a>
+                <a href="https://www.facebook.com/davidtendai.infinity.5"><img src="../img/l2.png" alt="Photo Missing" class="social"></a>
+                <a href="https://www.instagram.com/theartphilosopher/"><img src="../img/l3.png" alt="Photo Missing" class="social"></a>
+                <a href="https://wa.me/+23058417209"><img src="../img/l4.png" alt="Photo Missing" class="social"></a>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer-img">
+        <img src="../img/pty.png" alt="photo missing" width="800" height="200"/>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

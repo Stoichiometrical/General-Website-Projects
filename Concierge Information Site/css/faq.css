@@ -1,0 +1,364 @@
+/*Universal*/
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Pinyon+Script&display=swap');
+*{
+    color:white;
+    font-family: "Helvetica Neue","Minion Pro",  serif;
+}
+
+#faq-body {
+    display: inline-flex;
+    flex-direction: column;
+    /*background-image: url("https://images.pexels.com/photos/3369569/pexels-photo-3369569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");*/
+    background-image: url("../img/uipy.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+}
+
+/*Navbar*/
+.navbar{
+    position: fixed;
+    background-color: deepskyblue;
+    top:0;
+    width:100vw;
+    height: 50px;
+    padding: 10px;
+    z-index: 2;
+
+}
+.nav-links{
+    display: inline;
+    float:right;
+    margin-right:15%;
+    margin-top: 0.7%;
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 1em;
+}
+
+.nav-links a:hover{
+    color:blue;
+}
+
+
+/*Mainbody*/
+
+.main-body{
+    width:100vw;
+    height: 100vh;
+    top:0;
+    position:absolute;
+}
+
+.main-text{
+    margin-top: 10%;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.motto{
+    font-family:"Pinyon Script",cursive;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+.explore{
+    display: inline-block;
+    margin-top: 10%;
+    border: 2px solid deepskyblue;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: deepskyblue;
+    margin-left: 43vw;
+
+}
+
+.explore a{
+    text-decoration: none;
+}
+
+.button{
+    margin-top:10%;
+}
+.start-btn{
+    background-color: deepskyblue;
+    display:block;
+    text-align:center;
+    justify-content:center;
+    align-items: center;
+
+    border-radius: 10px;
+    border: none;
+    padding:10px;
+    color:white;
+    width:200px;
+    height:50px;
+    font-weight: bold;
+    margin-left: 40%;
+    margin-bottom: 10%;
+}
+
+.start-btn:hover{
+    color:deepskyblue;
+    width:20%;
+    background-color:white;
+}
+
+/*Start button customizations*/
+.rotate-button{
+    border-radius:65%;
+    animation-name: rotate-it;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes rotate-it  {
+    from{ transform: rotate(-360deg);}
+    to{transform: rotate(360deg);}
+}
+
+.quiz-box{
+    /*display:inline-grid;*/
+    display: none;
+    position: absolute;
+    width:700px;
+    height:300px;
+    font-size: 30px;
+    margin-left:22%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    row-gap: 10px;
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+    /*background-color: deepskyblue!important;*/
+    opacity:0.8;
+    padding: 10px;
+    top:45%;
+    z-index: 2;
+}
+/*Responsive design for tourist phone average size*/
+/*This is the average screen size of a tourist's smart phone' (Media Genesis, 2018)*/
+
+@media screen and (max-width: 900px){
+    body{
+        width:100vw;
+    }
+
+    .quiz-box{
+        max-width:50%;
+        min-width: 20%;
+        max-height:20%;
+        top:15%;
+        margin-top: 2%;
+        font-size: 1rem;
+    }
+
+    .main-text{
+        font-size: 2rem;
+    }
+
+    input{
+        width:2rem;
+        height: 2rem;
+    }
+
+}
+
+/*Styling for Button*/
+.next{
+    display: inline;
+    position: relative;
+    width:200px;
+    height:50%;
+    left:65%;
+}
+
+/*Styling for Check Buttons*/
+.button-style{
+    width:70px;
+    height:40px ;
+    background-color: white;
+    border-radius: 15px;
+    color:deepskyblue;
+}
+
+input[type=checkbox],input[type=radio],input[type=text],select,option{
+    width:50px;
+    height:30px;
+    color:deepskyblue;
+}
+
+
+/* Still more questions line */
+.question-section{
+    display: none;
+    text-align:center;
+    font-weight:bold;
+    font-size:30px;
+    margin-top:28%;
+    z-index: 2;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+.more-que{
+    font-family:Minion Pro,serif;
+    display: none;
+    /*display:flex;*/
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    position: relative;
+    background-color:deepskyblue;
+    width:300px;
+    height:400px;
+    margin-top:2%;
+    font-size:20px;
+    font-weight: bold;
+    color:white;
+    border-radius: 10px;
+    margin-left: 35%;
+    margin-bottom: 2%;
+    padding:10px;
+    z-index: 4;
+}
+
+.more-que input[type="email"],.more-que input[type="text"]{
+    width:250px;
+    height:20px;
+    padding: 10px;
+    padding-left: 5px;
+
+}
+textarea{
+    width:250px;
+    height:50px;
+    color: deepskyblue;
+}
+
+
+/*Footer*/
+.footer{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 0;
+    margin-top: 2%;
+
+
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80%;
+    background-color: deepskyblue;
+    width: 100vw;
+    height: 40vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 2;
+
+}
+
+.footer ul{
+    list-style-type: none;
+    font-size:20px;
+    font-weight: bold;
+
+}
+
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social{
+    width:50px;
+    height: 50px;
+}
+.footer-head{
+    font-size: 30px;
+    z-index: 2;
+}
+.footer-img{
+    background-color: deepskyblue;
+}
+
+.footer-img img{
+    margin-left: 17%;
+}
+
+
+
+/*Questions*/
+
+.qn1,.qn2,.qn3,.qn4,.qn5
+{
+    display: inline-block;
+}
+
+/*Quiz Message*/
+
+.quiz-message{
+    padding:10px;
+    font-size: 45px;
+
+}
+
+
+/*Slider settings*/
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: white; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: deepskyblue; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: deepskyblue; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}

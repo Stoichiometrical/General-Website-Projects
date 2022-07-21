@@ -1,0 +1,247 @@
+/*Universal*/
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Pinyon+Script&display=swap');
+.contact-body {
+    background-image: url("../img/beach4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+*{
+    color:white;
+    font-family: "Helvetica Neue","Minion Pro",  serif;
+}
+
+.index-body{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+/*Navbar*/
+.navbar{
+    position: fixed;
+    background-color: deepskyblue;
+    width:100vw;
+    height: 50px;
+    padding: 10px;
+    z-index: 2;
+    top:0;
+    /*position: relative;*/
+}
+.nav-links{
+    display: inline;
+    float:right;
+    margin-right:15%;
+    margin-top: 0.7%;
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 1em;
+}
+
+.nav-links a:hover{
+    color:blue;
+}
+
+
+
+/*Mainbody*/
+
+.main-body{
+    top:-6%;
+    background-image: url("https://images.pexels.com/photos/2087391/pexels-photo-2087391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-color: deepskyblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:100vw;
+    height: 100vh;
+    position:absolute;
+}
+
+.main-text{
+    margin-top: 10%;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.motto{
+    font-family:"Helvetica Neue",serif;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    display: block;
+    margin-bottom: 8%;
+}
+
+
+
+/*Action items*/
+
+.here{
+    margin-top: 2%;
+    margin-left: 29%;
+    font-weight: bold;
+    font-size: 45px;
+}
+.social-container{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    column-gap: 19px;
+    row-gap: 5px;
+   margin-left: 20%;
+}
+
+.action-text{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+/*PopUpButton*/
+.pop{
+    background-color: deepskyblue;
+    width: 200px;
+    padding:15px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/*Information About Me*/
+.bio-container{
+    width:90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 400px 400px;
+    padding: 10px;
+    margin-left: 5%;
+    column-gap: 10px;
+
+}
+
+.picture img{
+  width:90%;
+    height: 100%;
+}
+
+.bio-text{
+    font-weight: bold;
+    overflow-wrap: anywhere;
+    font-size: 30px;
+    color:deepskyblue;
+}
+
+
+
+/*Footer*/
+.footer{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 0;
+    margin-top: 2%;
+
+
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 85%;
+    background-color: deepskyblue;
+    width: 100vw;
+    height: 40vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: -1;
+}
+
+.footer ul{
+    list-style-type: none;
+    font-size:20px;
+    font-weight: bold;
+
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    width:100px;
+}
+
+.social{
+    width:50px;
+    height: 50px;
+}
+.footer-head{
+    font-size: 30px;
+}
+.footer-img{
+    background-color: deepskyblue;
+}
+
+.footer-img img{
+    margin-left: 17%;
+}
+
+
+/* Form elemnts */
+.more{
+    font-family:"Minion Pro",serif;
+    display:none;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    background-color:deepskyblue;
+    width:300px;
+    height:90%;
+    font-size:20px;
+    font-weight: bold;
+    color:white;
+    border-radius: 10px;
+    position: absolute;
+    top:27%;
+    margin-left: 60%;
+    padding:10px;
+}
+
+
+@media screen and (max-width: 901px){
+    .more{
+        height:40vh;
+        width: 50%;
+    }
+}
+
+input[type="email"],input[type="text"],select,option{
+    width:250px;
+    height:20px;
+    padding: 10px;
+    padding-left: 5px;
+    color:deepskyblue;
+}
+
+input[type="submit"],input[type="reset"],option{
+    width:70px;
+    height:40px ;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 2%;
+    color:deepskyblue;
+}
+
+.more input[type=radio]{
+    margin-right: 0;
+    width: 50px;
+    height:30px;
+}
+
+
