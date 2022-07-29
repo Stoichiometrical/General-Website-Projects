@@ -1,0 +1,8 @@
+export const Imaged = styled.img`
+  width:${(props) => props.imgWidth};
+  height: ${(props) => props.imgHeight};
+  position:absolute;
+  src: ${(props) => props.custImg});
+  border-radius:15px;
+  top:-11px;
+  left:29px;
