@@ -1,3 +1,3 @@
 # General-Website-Projects
 
-### This repository contains all my web development projects.Each project is in a different branch
+### This repository contains my general web development projects  from my courseworks written in html, css and javascript
